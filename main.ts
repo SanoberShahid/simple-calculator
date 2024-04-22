@@ -12,12 +12,12 @@ const MyCalulator = await inquirer.prompt([
         
         type:'number',
         name:'num1',
-        message:'enter first number',
+        message:'enter your first number',
     },
     {
         type:'number',
         name:'num2',
-        message:'enter other number'
+        message:'enter your other number'
     }
 ])
 
@@ -30,6 +30,6 @@ if(MyCalulator.operation === 'add'){
 }else {
     console.log(`the division of your numbr is:${MyCalulator.num1 / MyCalulator.num2}`); 
 }
-
+console.log('the end');
 
 
